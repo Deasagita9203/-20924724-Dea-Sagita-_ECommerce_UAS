@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Additional styles for contact form */
+        .contact-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            font-size: 1rem;
+        }
+        .contact-form textarea {
+            height: 120px;
+        }
+        .contact-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="Subject" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
